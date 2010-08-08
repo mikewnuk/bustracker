@@ -1,0 +1,177 @@
+/* @media screen and (max-device-width: 480px){ */
+
+	body{
+		-webkit-text-size-adjust:none;
+		font-family: Helvetica, sans-serif;
+		padding:5px;
+		font-size:14px;
+	}
+/* } */
+
+* {
+	margin:0px;
+	padding:0px;
+	border:0;
+}
+
+#wrapper {
+	width:320px;
+	margin:auto;
+	background-color:#eee;
+	border:1px #ccc solid;
+	padding:10px;
+	
+}
+
+h1 {
+	margin-bottom:6px;
+	font-size:16px;
+	color: #222;
+}
+
+li {
+	list-style:none;
+	padding-bottom:4px;
+	
+}
+
+a,a:visited {
+	color:#444;
+}
+
+th {
+	text-align:left;
+}
+
+table {
+	font-size:12px;	
+}
+
+td,th {
+	padding: 2px 0px;
+}
+
+span.number {
+	font-weight:bold;
+}
+
+#compass {
+	width:282px;
+	margin:auto;
+}
+
+#compass a {
+	display:block;
+	float:left;
+	width: 70px;
+	height: 70px;
+	border:2px #ccc solid;
+	margin: 5px;
+	padding:5px;
+	text-align:center;
+	border-radius:10px;
+	-moz-border-radius:10px;
+	position:relative;
+	text-decoration:none;
+	font-size:40px;
+	background-color:#ddd;
+
+	background: -webkit-gradient(
+	    linear,
+	    left bottom,
+	    left top,
+	    color-stop(0.4, rgb(168,168,168)),
+	    color-stop(1, rgb(214,214,214))
+
+	);
+	background: -moz-linear-gradient(
+	    center bottom,
+	    rgb(168,168,168) 40%,
+	    rgb(214,214,214) 100%
+
+	)
+}
+
+#compass a:hover {
+	background: -webkit-gradient(
+	    linear,
+	    left bottom,
+	    left top,
+	    color-stop(.4, rgb(214,214,214)),
+	    color-stop(1, rgb(168,168,168))
+	);
+	background: -moz-linear-gradient(
+	    center bottom,
+	    rgb(214,214,214) 40%,
+	    rgb(168,168,168) 100%
+
+	)	
+	
+	
+}
+#compass a:hover span {
+	text-shadow: -1px 0px 1px #555;
+}
+
+#compass a span {
+	position:relative;
+	text-shadow: -1px 1px 1px #555;
+	color:#eee;
+	top:15px;
+}
+
+.cardinal span {
+	
+}
+
+#compass a.intermediate {
+	width:50px;
+	height:50px;
+	
+}
+.intermediate span {
+	font-size:22px;
+}
+
+a#middle,
+a#middle:hover {
+	border:none;
+	background:transparent;	
+	padding:5px 7px;
+	
+}
+
+a#nw {
+	margin-left:25px;
+	margin-top:25px;
+}
+
+a#n {
+	
+}
+
+a#ne {
+	margin-right:25px;
+	margin-top:25px;
+}
+
+a#w {
+	clear:left;
+}
+
+a#e {
+
+}
+
+a#sw {
+	clear:left;
+	margin-left:25px;
+}
+
+a#s {
+	
+}
+
+a#se {
+	margin-right:25px;
+}
