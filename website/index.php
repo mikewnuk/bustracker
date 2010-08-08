@@ -13,6 +13,18 @@ $lon = -87.6868722790678;
 	<head>
 		<title>CTA Bus Tracker</title>
 		<link rel="stylesheet" href="/css/style.css"></link>
+		<script type="text/javascript">
+			var lat;
+			var lon;
+			function findstops(position) {
+				//console.log(position);
+				lat =  position.coords.latitude;
+				lon =  position.coords.longitude;
+			}
+			navigator.geolocation.getCurrentPosition(findstops);
+			
+
+		</script>
 	</head>
 	<body>
 		<div id="wrapper">
