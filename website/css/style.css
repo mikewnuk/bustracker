@@ -1,36 +1,31 @@
-body {
-	font-family: Helvetica, sans-serif;
-	padding:5px;
-	font-size:14px;	
-}
-
-
-@media screen and (max-device-width: 480px){
+/* @media screen and (max-device-width: 480px){ */
 
 	body{
 		-webkit-text-size-adjust:none;
-
+		font-family: Helvetica, sans-serif;
+		padding:5px;
+		font-size:14px;
 	}
-}
+/* } */
 
 * {
 	margin:0px;
 	padding:0px;
-	border:0;
 }
 
 #wrapper {
 	width:320px;
 	margin:auto;
-	background-color:#666;
+	background-color:#eee;
 	border:1px #ccc solid;
 	padding:10px;
-	
+	line-height:140%;
+	font-size:12px;
 }
 
 h1 {
 	margin-bottom:6px;
-	font-size:16px;
+	font-size:14px;
 	color: #222;
 }
 
@@ -60,123 +55,42 @@ span.number {
 	font-weight:bold;
 }
 
-#compass {
-	width:282px;
-	margin:auto;
+h2 {
+   font-size:16px;
 }
 
-#compass a {
-	display:block;
-	float:left;
-	width: 70px;
-	height: 70px;
-	border:2px #ccc solid;
-	margin: 5px;
-	padding:5px;
-	text-align:center;
-	border-radius:10px;
-	-moz-border-radius:10px;
-	position:relative;
-	text-decoration:none;
-	font-size:40px;
-	background-color:#ddd;
-
-	background: -webkit-gradient(
-	    linear,
-	    left bottom,
-	    left top,
-	    color-stop(0.4, rgb(168,168,168)),
-	    color-stop(1, rgb(214,214,214))
-
-	);
-	background: -moz-linear-gradient(
-	    center bottom,
-	    rgb(168,168,168) 40%,
-	    rgb(214,214,214) 100%
-
-	)
+.direction {
+    border-bottom: 1px #ccc dotted; 
+    margin-top:5px;
 }
 
-#compass a:hover {
-	background: -webkit-gradient(
-	    linear,
-	    left bottom,
-	    left top,
-	    color-stop(.4, rgb(214,214,214)),
-	    color-stop(1, rgb(168,168,168))
-	);
-	background: -moz-linear-gradient(
-	    center bottom,
-	    rgb(214,214,214) 40%,
-	    rgb(168,168,168) 100%
-
-	)	
-	
-	
+.routename {
+    font-weight:bold;
 }
-#compass a:hover span {
-	text-shadow: -1px 0px 1px #555;
+.stopname {
+   font-style: italic;
 }
 
-#compass a span {
-	position:relative;
-	text-shadow: -1px 1px 1px #555;
-	color:#eee;
-	top:15px;
+.times :first-child  {
+    font-weight:bold;
+    color:green;
 }
 
-.cardinal span {
-	
+.direction_label {
+   float:left;  
+   width:50px;
+   font-size:24px;
+   color:#888;
+   margin-top:6px;
 }
 
-#compass a.intermediate {
-	width:50px;
-	height:50px;
-	
+.info {
+   float:right;
+   width:240px;
 }
-.intermediate span {
-	font-size:22px;
-}
-
-a#middle,
-a#middle:hover {
-	border:none;
-	background:transparent;	
-	padding:5px 7px;
-	
-}
-
-a#nw {
-	margin-left:25px;
-	margin-top:25px;
-}
-
-a#n {
-	
-}
-
-a#ne {
-	margin-right:25px;
-	margin-top:25px;
-}
-
-a#w {
-	clear:left;
-}
-
-a#e {
-
-}
-
-a#sw {
-	clear:left;
-	margin-left:25px;
-}
-
-a#s {
-	
-}
-
-a#se {
-	margin-right:25px;
+form {
+    margin-bottom:10px;
+    padding-bottom:10px;
+    border-bottom:1px #ccc solid;
+    text-align:center;
 }
